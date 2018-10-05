@@ -1,4 +1,5 @@
         <div id="content" class="site-content center-relative">
+        {% for posts in site.posts limit:1 %}
             <article class="content-1170 center-relative">
                 <div class="single-header-content">
                     <div class="one margin-0">
@@ -109,7 +110,7 @@
 
                 <div class="clear"></div>
             </article>
-
+        {% endfor %}
         </div>
 
         <div class="clear"></div>
