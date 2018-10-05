@@ -9,7 +9,7 @@ title: Products
                 <div class="grid-sizer"></div>
                 {% for posts in site.posts %}
                 <article class="grid-item element-item p_one_half">
-                    <a class="img relative" href="single.html">
+                    <a class="img relative" href="{{posts.url}}">
                         <img src="{{posts.image}}" alt="" >
                         <img class="hover-img" src="{{posts.image}}" alt="">
                         <div class="item-info">
@@ -28,7 +28,7 @@ title: Products
                             </ul>
                         </div> 
                         <h2 class="entry-title">
-                            <a href="single.html">{{posts.title}}</a>
+                            <a href="{{posts.url}}">{{posts.title}}</a>
                         </h2>
                         <div class="like-holder">
                             <a href="#"> 
