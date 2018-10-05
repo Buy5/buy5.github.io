@@ -1,22 +1,21 @@
         <div id="content" class="site-content center-relative">
-        {% for posts in site.posts limit:1 %}
             <article class="content-1170 center-relative">
                 <div class="single-header-content">
                     <div class="one margin-0">
-                        <img src="{{posts.image}}" alt="">
+                        <img src="{{page.image}}" alt="">
                     </div>
                     <div class="clear"></div>
                 </div>
                 <div class="wrapper">
                     <div class="post-info">
                         <div class="post-date">
-                            <p>Release:</p> <span>{{posts.release}}</span> 
+                            <p>Release:</p> <span>{{page.release}}</span> 
                         </div>
                         <div class="cat-links">
                             <p>Category:</p>                                
                             <ul>
                                 <li>
-                                    <a href="{{% post.category %}}">{{posts.category}}</a>
+                                    <a href="{{% page.category %}}">{{page.category}}</a>
                                 </li>
                             </ul>
                         </div>
@@ -25,20 +24,20 @@
                             <p>Tags:</p> 
                             <ul>
                                 <li>
-                                    <a href="#">{{posts.tags}}</a>
+                                    <a href="#">{{page.tags}}</a>
                                 </li>
                             </ul>
                         </div>   
 
                         <div class="more-info ">
-                            <p>Brand:</p> <span>{{posts.brand}}</span>
+                            <p>Brand:</p> <span>{{page.brand}}</span>
                         </div>
 
                         <div class="like-holder">
                             <a href="#"> 
                                 <div class="heart-holder"></div>                    
                             </a>
-                            <span class="count"><p>{{posts.price}}</p></span>
+                            <span class="count"><p>{{page.price}}</p></span>
                         </div>
                         <div class="text-left download-button">
                             <a href="#" class="button">Buy</a>  
@@ -47,13 +46,13 @@
 
                     <div class="post-info mob">
                         <div class="post-date">
-                            <p>Release:</p> <span>{{posts.release}}</span> 
+                            <p>Release:</p> <span>{{page.release}}</span> 
                         </div>
                         <div class="cat-links">
                             <p>Category:</p>                                
                             <ul>
                                 <li>
-                                    <a href="{{% post.category %}}">{{posts.category}}</a>
+                                    <a href="{{% page.category %}}">{{page.category}}</a>
                                 </li>
                             </ul>
                         </div>
@@ -62,20 +61,20 @@
                             <p>Tags:</p> 
                             <ul>
                                 <li>
-                                    <a href="#">{{posts.tags}}</a>
+                                    <a href="#">{{page.tags}}</a>
                                 </li>
                             </ul>
                         </div>   
 
                         <div class="more-info ">
-                            <p>Brand:</p> <span>{{posts.brand}}</span>
+                            <p>Brand:</p> <span>{{page.brand}}</span>
                         </div>
 
                         <div class="like-holder">
                             <a href="#"> 
                                 <div class="heart-holder"></div>                    
                             </a>
-                            <span class="count"><p>{{posts.price}}</p></span>
+                            <span class="count"><p>{{page.price}}</p></span>
                         </div>
                         <div class="text-left download-button">
                             <a href="#" class="button">Buy</a>  
@@ -83,7 +82,7 @@
                     </div>
                     
                     <div class="entry-content-holder">
-                        <h1 class="entry-title">{{posts.title}}</h1>
+                        <h1 class="entry-title">{{page.title}}</h1>
                         <div class="center-relative clear">                  
                             <div class="entry-content">
                                 <div class="content-wrap">
@@ -110,7 +109,6 @@
 
                 <div class="clear"></div>
             </article>
-        {% endfor %}
         </div>
 
         <div class="clear"></div>
