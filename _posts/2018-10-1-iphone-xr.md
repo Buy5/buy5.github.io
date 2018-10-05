@@ -5,6 +5,7 @@ brand: Apple
 release: October 26, 2018
 category: Smartphone
 os: iOS
+price: 76,900
 ---
 
         <div id="content" class="site-content center-relative">
