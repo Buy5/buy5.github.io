@@ -2,7 +2,7 @@
 layout: single
 title: iPhone XR
 permalink: iphone-xr
-image: images/iphonexr.jpeg
+image: images/phones/iphonexr.jpeg
 brand: Apple
 release: October 26, 2018
 category: Smartphones
