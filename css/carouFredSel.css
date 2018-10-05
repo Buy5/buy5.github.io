@@ -25,7 +25,7 @@ a.image_slider_prev{background-image: url(../images/navigation_arrows_left.png);
 a.image_slider_prev:hover{background-position: 0 -90px;}
 a.image_slider_next{background-image: url(../images/navigation_arrows_right.png); width: 105px; height: 90px; z-index: 2;}
 a.image_slider_next:hover{background-position: 0 -90px;}
-.carousel_pagination {margin-top: 50px; margin-bottom: 50px; margin-left: 160px;}
+.carousel_pagination {margin-top: 20px; margin-bottom: 50px; margin-left: 160px;}
 .carousel_pagination a {margin: 0 0 0 5px; float: left; transition: background-color .2s linear}
 .carousel_pagination a:first-child {margin: 0;}
 .carousel_pagination a {width: 9px; height: 9px; border-radius: 90%; display: block; cursor: pointer; text-indent: -9999px;}
