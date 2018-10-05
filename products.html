@@ -2,8 +2,12 @@
 layout: default
 title: Products
 ---
-
-            {% for posts in site.posts %}
+            
+        <div id="blog-holder">
+            <div class="blog-background"></div>
+            <div class="grid">
+                <div class="grid-sizer"></div>
+                {% for posts in site.posts %}
                 <article class="grid-item element-item p_one_half">
                     <a class="img relative" href="single.html">
                         <img src="demo-images/item_image_02.jpg" alt="" >
@@ -35,3 +39,6 @@ title: Products
                     </div>
                 </article>
             {% endfor %}
+            </div>
+            <div class="clear"></div>
+        </div>
