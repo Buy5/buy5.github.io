@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: iPhone XR
 permalink: iphone-xr
 image: images/phones/iphonexr.jpeg
