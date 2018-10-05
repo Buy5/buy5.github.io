@@ -6,6 +6,7 @@ layout: default
             <div class="blog-background"></div>
             <div class="grid">
                 <div class="grid-sizer"></div>
+                    
                 <article class="grid-item element-item p_one">
                     <a class="img relative" href="single.html">
                         <img src="demo-images/item_image_01.jpg" alt="">
@@ -37,130 +38,32 @@ layout: default
                     </div>
                 </article>
 
-
+                {% for posts in site.posts %}
                 <article class="grid-item element-item p_one_half">
-                    <a class="img relative" href="single.html">
-                        <img src="demo-images/item_image_02.jpg" alt="" >
-                        <img class="hover-img" src="demo-images/item_image_02b.jpg" alt="">
-                        <div class="item-info">
-                            <span class="prev">612</span>
-                            <span class="down">
-                                <span class="count">105</span>                                    
-                            </span>
-                        </div>
+                    <a class="img relative" href="{{posts.url}}">
+                        <img src="{{posts.image}}" alt="" >
+                        <img class="hover-img" src="{{posts.image}}" alt="">
                     </a>
                     <div class="entry-content">
                         <div class="cat-links">
                             <ul>
                                 <li>
-                                    <a href="#">Branding</a>
+                                    <a href="#">{{posts.category}}</a>
                                 </li>
                             </ul>
                         </div> 
                         <h2 class="entry-title">
-                            <a href="single.html">Peue Business Card Mockup Sample</a>
+                            <a href="{{posts.url}}">{{posts.title}}</a>
                         </h2>
                         <div class="like-holder">
-                            <a href="#"> 
-                                <div class="heart-holder"></div>                    
-                            </a>
-                            <span class="count">94</span>
+                            <div class="heart-holder"></div>
+                                    <span class="count"><p>{{posts.price}}</p></span>
                         </div>
                     </div>
                 </article>
-
-                <article class="grid-item element-item p_one_half">
-                    <a class="img relative" href="single.html">
-                        <img src="demo-images/item_image_03.jpg" alt="">
-                        <img class="hover-img" src="demo-images/item_image_03b.jpg" alt="">
-                        <div class="item-info">
-                            <span class="prev">610</span>
-                            <span class="down">
-                                <span class="count">250</span>                                   
-                            </span>
-                        </div>
-                    </a>
-                    <div class="entry-content">
-                        <div class="cat-links">
-                            <ul>
-                                <li>
-                                    <a href="#">Icons</a>
-                                </li>
-                            </ul>
-                        </div> 
-                        <h2 class="entry-title">
-                            <a href="single.html">Dripicons by Amit Jakhu</a>
-                        </h2>
-                        <div class="like-holder">
-                            <a href="#"> 
-                                <div class="heart-holder"></div>                    
-                            </a>
-                            <span class="count">113</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="grid-item element-item p_one_fourth">
-                    <a class="img relative" href="single.html">
-                        <img src="demo-images/item_image_04.jpg" alt="">
-                        <img class="hover-img" src="demo-images/item_image_04b.jpg" alt="">
-                        <div class="item-info">
-                            <span class="prev">464</span>
-                            <span class="down">
-                                <span class="count">183</span>                                   
-                            </span>
-                        </div>
-                    </a>
-                    <div class="entry-content">
-                        <div class="cat-links">
-                            <ul>
-                                <li>
-                                    <a href="#">Fonts</a>
-                                </li>
-                            </ul>
-                        </div> 
-                        <h2 class="entry-title">
-                            <a href="single.html">Octanis Font</a>
-                        </h2>
-                        <div class="like-holder">
-                            <a href="#"> 
-                                <div class="heart-holder"></div>                    
-                            </a>
-                            <span class="count">164</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="grid-item element-item p_one_fourth">
-                    <a class="img relative" href="single.html">
-                        <img src="demo-images/item_image_05.jpg" alt="">
-                        <img class="hover-img" src="demo-images/item_image_05b.jpg" alt="">
-                        <div class="item-info">
-                            <span class="prev">379</span>
-                            <span class="down">
-                                <span class="count">60</span>                                    
-                            </span>
-                        </div>
-                    </a>
-                    <div class="entry-content">
-                        <div class="cat-links">
-                            <ul>
-                                <li>
-                                    <a href="#">Misc</a>
-                                </li>
-                            </ul>
-                        </div> 
-                        <h2 class="entry-title">
-                            <a href="single.html">Greeting Card</a>
-                        </h2>
-                        <div class="like-holder">
-                            <a href="#"> 
-                                <div class="heart-holder"></div>                    
-                            </a>
-                            <span class="count">71</span>
-                        </div>
-                    </div>
-                </article>
+                {% endfor %}
+                    
+                    
             </div>
             <div class="clear"></div>
 
