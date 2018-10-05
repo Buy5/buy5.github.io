@@ -1,5 +1,10 @@
 ---
 layout: single
+title: iPhone XR
+brand: Apple
+release: October 26, 2018
+category: Smartphone
+os: iOS
 ---
 
         <div id="content" class="site-content center-relative">
