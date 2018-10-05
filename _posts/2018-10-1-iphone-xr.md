@@ -5,7 +5,7 @@ permalink: iphone-xr
 image: demo-images/item_image_06.jpg
 brand: Apple
 release: October 26, 2018
-category: Smartphone
+category: Smartphones
 os: iOS
 price: 76,900
 ---
