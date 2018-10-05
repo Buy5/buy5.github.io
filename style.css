@@ -690,7 +690,7 @@ span.down:before
     display: inline-block;
     vertical-align: -6px;
     cursor: pointer;
-    background-image: url(images/like_heart.png);
+    background-image: url(images/inr.png);
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: 0 0;
