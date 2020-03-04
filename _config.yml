@@ -1,6 +1,8 @@
 ---
 title: Buy5
+
 timezone: UTC
+
 collections:
   posts:
     title: Posts
@@ -8,4 +10,13 @@ collections:
   uploads:
     title: Uploads
     output: true
+
 url: https://buy5.github.io
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
