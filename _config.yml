@@ -15,5 +15,4 @@ defaults:
   values:
     layout: post
 url: https://buy5.github.io
-
-permalink: /:categories/:title
+permalink: "/:categories/:title"
